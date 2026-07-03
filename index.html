@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>J-15 ❤️ A & D</title>
+  <title>J-15</title>
   <style>
     html, body {
       height: 100%;
@@ -11,83 +11,64 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       font-family: "Segoe UI", system-ui, sans-serif;
+      padding-top: 60px;
     }
 
     h1 {
       font-size: 4rem;
       color: #222;
-      margin-bottom: 1.5rem;
+      margin-bottom: 40px;
       letter-spacing: 0.1em;
     }
 
-    .heart-wrapper {
-      position: relative;
-      width: 220px;
-      height: 200px;
-    }
-
-    .heart-shape {
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      width: 150px;
-      height: 130px;
-      transform: translateX(-50%);
-    }
-
-    .heart-shape::before,
-    .heart-shape::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 75px;
-      height: 120px;
-      background: #e63946;
-      border-radius: 75px 75px 0 0;
-      transform-origin: 0 100%;
-    }
-
-    .heart-shape::before {
-      left: 0;
-      transform: rotate(-45deg);
-    }
-
-    .heart-shape::after {
-      left: 75px;
-      transform-origin: 100% 100%;
-      transform: rotate(45deg);
-    }
-
-    .initials {
-      position: absolute;
-      top: 60px;
-      left: 50%;
-      transform: translateX(-50%);
+    .row {
       display: flex;
-      gap: 40px;
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 1.6rem;
-      z-index: 2;
+      gap: 80px;
+      align-items: center;
+      margin-bottom: 20px;
     }
 
-    .initials span {
-      min-width: 24px;
+    .letter {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #333;
       text-align: center;
+    }
+
+    .shoes {
+      display: flex;
+      gap: 80px;
+      margin-top: 10px;
+    }
+
+    .shoe img {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
+
   <h1>J-15</h1>
 
-  <div class="heart-wrapper">
-    <div class="heart-shape"></div>
-    <div class="initials">
-      <span>A</span>
-      <span>D</span>
+  <!-- Ligne A & D -->
+  <div class="row">
+    <div class="letter">A</div>
+    <div class="letter">D</div>
+  </div>
+
+  <!-- Chaussures -->
+  <div class="shoes">
+    <div class="shoe">
+      <img src="birk.jpg" alt="Birk sous A">
+    </div>
+    <div class="shoe">
+      <img src="havaianas.jpg" alt="Havaianas sous D">
     </div>
   </div>
+
 </body>
 </html>
